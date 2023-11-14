@@ -46,7 +46,7 @@ const ctx = document.getElementById('donutChart').getContext('2d');
 const donutChart = new Chart(ctx, {
 type: 'doughnut',
 data: {
- labels: ['Lockdown', 'Non-Lockdown'],
+ labels: ['Non-Lockdown', 'Lockdown'],
  datasets: [{
      data: [totalLockdownDays, 365 - totalLockdownDays],
      backgroundColor: ['#FF7720', '#FCE78D'],
